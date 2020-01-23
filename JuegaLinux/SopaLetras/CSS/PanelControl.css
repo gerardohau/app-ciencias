@@ -1,0 +1,37 @@
+.nombreUsuario{
+	margin-top: 2px;
+}
+.manager-actions{
+	margin-top: 10px;
+}
+.accion {
+	margin-left: 5px;
+	height: 150px;
+	background-color: white;
+}
+.body {
+	background-color: #d5cdcb;
+}
+.presentacion{
+	margin-top: 25px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.card-body{
+	height: 200px;
+	border-radius: 5px;
+	background: #343a408a;
+	box-shadow: 1px 1px 30px #000;
+}
+
+.zoom {
+    transition: transform .2s;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    z-index: 100; 
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="w-100 h-100">
+<head>
+	<title></title>
+<meta charset="utf-8"  /> 
+   <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<style>
+
+.display-1{
+	
+
+    font-size: 6rem !important;
+    font-weight: 300 !important;
+    line-height: 1.2 !important;
+}
+
+.center{
+	margin-top: 100px;
+}
+
+.ima-feliz{
+	position: absolute;
+	z-index: 12;
+	left: 0;
+}
+.vertical-align{
+
+}
+	</style>
+
+</head>
+<body class="w-100 h-100  body">
+
+	<div class="row main-container w-100 h-100 vertical-align" >
+		<center>
+		<div style="font-size: 3rem !important">
+		¡Felicidades has ganado!
+		</div>
+
+		</center>
+		<center>
+		<div class="center">
+			<span id="text" class="display-1">
+			</span>
+
+			<span>puntos</span>
+		</div>
+			
+		</center>
+
+		<center>
+		<div class="center">
+			<span id="text" class="display-1">
+			</span>
+
+			<span></span>
+		</div>
+		<center>
+
+		</center>
+			<a class="btn btn-success" href="index.html">salir</a>
+		<!--	
+		</center>
+			<img class="ima-feliz" src='images/cara.jpg'/ height="100px" width="100px">
+		<center>
+		-->
+		<div>
+			<img  height="200px" width="150px" src="images/p1.png">
+		</div>
+	</center>
+
+
+
+	</div>
+	<script type="text/javascript">
+		var text = document.getElementById("text");
+		
+		var url_string = window.location.href;
+		var url = new URL(url_string);
+		var c = url.searchParams.get("points");
+		text.innerHTML = c;	
+	</script>
+</body>
+</html>

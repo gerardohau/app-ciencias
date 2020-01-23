@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Juega Linux</title>
+	<script type="text/javascript" src="../JS/jquery.min.js" language="javascript"></script>
+	<script type="text/javascript" src="../JS/bootstrap.bundle.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="../CSS/bootstrap.css" crossorigin="anonymous">
+	<!--BootstrapJuegaLinux-->
+	<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+	<!--favicon-->
+	<link rel="icon" type="image/vnd.microsoft.icon" href="../ICONS/peng.ico" sizes="16x16 32x32 64x64">
+
+</head>
+<body>
+
+	<!-- Inicio de navBar -->
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<a class="navbar-brand" href="">Escoge un juego!</a>
+	</nav><!-- Fin de navBar -->
+
+	<div class="row justify-content-center align-self-center">
+		<div class="container" style="padding-top: 20px">
+
+			<div class="card text-white bg-danger">
+				<div class="row no-gutters">
+					<div class="col-auto">
+						<img src="../IMG/asia.png" class="img-fluid" alt="" width="130" height="130">
+					</div>
+					<div class="col">
+						<div class="card-block px-2">
+							<h4 class="card-title">Asia</h4>
+							<p class="card-text">En este juego...</p>
+							<a href="../../NinjaGame/menu.html" class="btn btn-success">Jugar!</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="card text-white bg-primary">
+				<div class="row no-gutters">
+					<div class="col-auto">
+						<img src="../IMG/biblioteca.png" class="img-fluid" alt="" width="130" height="130">
+					</div>
+					<div class="col">
+						<div class="card-block px-2">
+							<h4 class="card-title">Biblioteca</h4>
+							<p class="card-text">Ayuda a Pingu a encontrar todas las palabras dadas en la sopa de letras!</p>
+							<a href="../../SopaLetras/SeleccionarNivel.html" class="btn btn-warning">Jugar!</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="card text-black bg-warning">
+				<div class="row no-gutters">
+					<div class="col-auto">
+						<img src="../IMG/iceberg.png" class="img-fluid" alt="" width="130" height="130">
+					</div>
+					<div class="col">
+						<div class="card-block px-2">
+							<h4 class="card-title">Icerberg</h4>
+							<p class="card-text">Ayuda a Pingu a contar los peces que pesca!</p>
+							<a href="../../UnidadesDecenasCentenas/index.html" class="btn btn-primary">Jugar!</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="card text-white bg-secondary">
+				<div class="row no-gutters">
+					<div class="col-auto">
+						<img src="../IMG/museo.png" class="img-fluid" alt="" width="130" height="130">
+					</div>
+					<div class="col">
+						<div class="card-block px-2">
+							<h4 class="card-title">Museo</h4>
+							<p class="card-text">Ayuda a Pingu a encontrar las fallas en sus carteles!</p>
+							<a href="../../Carteles/HTML/index.html" class="btn btn-light">Jugar!</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="card text-white bg-success">
+				<div class="row no-gutters">
+					<div class="col-auto">
+						<img src="../IMG/vegas.png" class="img-fluid" alt="" width="130" height="130">
+					</div>
+					<div class="col">
+						<div class="card-block px-2">
+							<h4 class="card-title">Las Vegas</h4>
+							<p class="card-text">Ayuda a Pingu a resolver sus crucigramas!</p>
+							<a href="../../Crucigrama/index.html" class="btn btn-danger">Jugar!</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+
+<!--Scripts-->
+<script src="../JS/jquery.js" crossorigin="anonymous"></script>
+<script src="../JS/popper.js" crossorigin="anonymous"></script>
+<script src="../JS/bootstrap.js" crossorigin="anonymous"></script>

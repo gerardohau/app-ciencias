@@ -1,0 +1,36 @@
+
+div.container1 {
+  background-image: url("../imagenes/fondo1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align:center;
+  height:100%;
+  width: 100%;
+  color: white;
+  position:absolute;
+ }
+#maintitle {
+	color: white;
+	text-shadow: 2px 0 0 blue, -2px 0 0 blue, 0 2px 0 blue, 0 -2px 0 blue, 1px 1px blue, -1px -1px 0 blue, 1px -1px 0 blue, -1px 1px 0 blue;
+}
+.col1{
+	padding-right:0 !important;
+	width: 20%;
+}
+.col2{
+	padding:0 !important;
+	width: 20%;
+}
+.col3{
+	padding:0 !important;
+	width: 20%;
+}
+.col4{
+	padding-left:0 !important;
+	width: 20%;
+}
+.col5{
+	padding-left:0 !important;
+	width: 20%;
+}
