@@ -14,11 +14,13 @@
   transition: opacity 0.2s;
 }
 
-
-
 .good{
   border: 0.1em solid green;
 }
 .bad{
   border: 0.1em solid red;
+}
+
+.dropped{
+  pointer-events: all;
 }

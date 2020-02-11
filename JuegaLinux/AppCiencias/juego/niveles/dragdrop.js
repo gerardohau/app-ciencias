@@ -12,9 +12,11 @@ draggable_opciones.forEach(elem => {
 });
 
 droppable_espacio_respuesta.forEach(elem => {
-  elem.addEventListener("dragenter", dragEnter); // Fires when a dragged item enters a valid drop target
+  //elem.addEventListener("dragenter", dragEnter); // Fires when a dragged item enters a valid drop target
   elem.addEventListener("dragover", dragOver); // Fires when a dragged item is being dragged over a valid drop target, repeatedly while the draggable item is within the drop zone
-  elem.addEventListener("dragleave", dragLeave); // Fires when a dragged item leaves a valid drop target
+  //elem.addEventListener("dragleave", dragLeave); // Fires when a dragged item leaves a valid drop target
+  elem.addEventListener("click",changeAnswer);
+  
   elem.addEventListener("drop", drop); // Fires when an item is dropped on a valid drop target
 });
 
@@ -47,23 +49,24 @@ function dragLeave(event) {
 }
 
 function drop(event) {
-    console.log("Uff")
+  console.log("Uff")
   event.preventDefault(); // This is in order to prevent the browser default handling of the data
-  event.target.classList.remove("droppable-hover");
   const draggableElementData = event.dataTransfer.getData("text"); // Get the dragged data. This method will return any data that was set to the same type in the setData() method
 
-  event.target.setAttribute("data-answer",draggableElementData);
-  event.target.innerHTML = draggableElementData;
-  //const droppableElementData = event.target.getAttribute("data-draggable-id");
-// const isCorrectMatching = draggableElementData === droppableElementData;
-    const draggableElement = document.getElementById(draggableElementData);
-    event.target.classList.add("dropped");
-    // event.target.style.backgroundColor = draggableElement.style.color; // This approach works only for inline styles. A more general approach would be the following: 
-    //event.target.style.backgroundColor = window.getComputedStyle(draggableElement).color;
-   // draggableElement.classList.add("dragged");
-    //draggableElement.setAttribute("draggable", "false");
-    event.target.insertAdjacentHTML("afterbegin", `<i class="fas fa-${draggableElementData}"></i>`);
   
+  const actual_opcion = event.target.getAttribute("data-answer");
+  
+  if(actual_opcion !== "") {
+    document.getElementById(actual_opcion).classList.remove("d-none")};
+  
+  
+  event.target.setAttribute("data-answer",draggableElementData);
+  
+  
+  
+  event.target.innerHTML = draggableElementData;
+  const draggableElement = document.getElementById(draggableElementData);
+  draggableElement.classList.add("d-none");
 }
 
 
@@ -94,6 +97,17 @@ function checkAnswers(){
     parent.appendChild(buttton_siguiente_nivel);
 }
 
+function changeAnswer(event){
+  console.log("cambio res");
+  const contenido = event.target.getAttribute("data-answer");
+  const opcion_desa = document.getElementById(contenido);
+  opcion_desa.classList.remove("d-none");
+  event.target.innerHTML = "";
+  event.target.setAttribute("data-answer","");
+
+}
+
+
 function create_btn_a(url, texto_a, color_btn){
   var elemento = document.createElement("a");
   elemento.setAttribute("href", url);
@@ -101,4 +115,16 @@ function create_btn_a(url, texto_a, color_btn){
   elemento.className =  "btn btn-"+color_btn+" m-2";
   return elemento;
 }
+
+function create_list_item(texto_a){
+  var elemento = document.createElement("li");
+  elemento.setAttribute("id", texto_a);
+  elemento.setAttribute("draggable","true");
+  elemento.innerHTML = texto_a;
+  elemento.className =  "list-group-item m-1 draggable";
+  return elemento;
+}
+
+
+
 
