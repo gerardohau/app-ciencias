@@ -1,0 +1,18 @@
+.caja{
+    border: 2px solid green;
+}
+
+.game_box{
+  width: 10rem;
+  height: 3.2rem;
+  background-color: gainsboro;
+  border-radius: 0.5rem; 
+}
+
+
+.good{
+  border: 0.1em solid green;
+}
+.bad{
+  border: 0.1em solid red;
+}
