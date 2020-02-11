@@ -9,6 +9,12 @@
   border-radius: 0.5rem; 
 }
 
+.draggable {
+  cursor: move;
+  transition: opacity 0.2s;
+}
+
+
 
 .good{
   border: 0.1em solid green;

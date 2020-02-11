@@ -1,5 +1,4 @@
 
-
 const draggable_opciones = document.querySelectorAll(".draggable");
 const droppable_espacio_respuesta = document.querySelectorAll(".droppable");
 
@@ -87,8 +86,8 @@ function checkAnswers(){
 
 
     boton.classList.add("d-none");
-    const button_reintentar = create_btn_a("youtube.com", "Reintentar","bg-red");
-    const buttton_siguiente_nivel = create_btn_a("figma.com", "Siguiente nivel", "bg-green");
+    const button_reintentar = create_btn_a("youtube.com", "Reintentar","light");
+    const buttton_siguiente_nivel = create_btn_a("figma.com", "Siguiente nivel", "primary");
 
     const parent = boton.parentElement;
     parent.appendChild(button_reintentar);
@@ -99,7 +98,7 @@ function create_btn_a(url, texto_a, color_btn){
   var elemento = document.createElement("a");
   elemento.setAttribute("href", url);
   elemento.innerHTML = texto_a;
-  elemento.className =  "btn btn-light m-2 ";
+  elemento.className =  "btn btn-"+color_btn+" m-2";
   return elemento;
 }
 
