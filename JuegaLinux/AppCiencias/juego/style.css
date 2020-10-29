@@ -15,10 +15,18 @@
 }
 
 .good{
-  border: 0.1em solid green;
+  border: 0.2em solid #28a745;
+}
+.good-icon{
+  font-size: 4rem;
+  color: #28a745;
 }
 .bad{
-  border: 0.1em solid red;
+  border: 0.2em solid #dc3545 ;
+}
+.bad-icon{
+  font-size: 4rem;
+  color: #dc3545;
 }
 
 .dropped{
