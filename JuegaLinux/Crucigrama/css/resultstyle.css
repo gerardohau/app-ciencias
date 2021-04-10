@@ -1,0 +1,17 @@
+#res {
+	color: black;
+ 	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+div.container-fluid {
+  background-image: url("../imagenes/fondo1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Helvetica, sans-serif !important;
+  font-size: 3em !important;
+  text-align:center;
+  height:100%;
+  width: 100%;
+  color: white;
+  position:absolute;
+ }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Museo</title>
+	<script type="text/javascript" src="./JS/jquery.min.js" language="javascript"></script>
+	<script type="text/javascript" src="./JS/bootstrap.bundle.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../ICONS/favicon.ico" type="image/gif" sizes="64x64">
+
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<!--BootstrapJuegaLinux-->
+	<link rel="stylesheet" type="text/css" href="../../CSS/bootstrap.css">
+
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="../CSS/Carteles.css">
+
+</head>
+<body>
+
+	<!-- Inicio de navBar -->
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<!-- Brand/logo -->
+		<a class="navbar-brand" href="">Escoge un cartel</a>
+
+		<!-- Links -->
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="../../../index.html">Volver</a>
+			</li>
+		</ul>
+	</nav><!-- Fin de navBar -->
+
+	<!--Help-->
+	<img src="../ICONS/round-help-24px.svg" class="float-right" alt="Icono de Ayuda" data-toggle="modal" data-target="#helpModal">
+	<div id="helpModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title font-weight-bold" id="helpModalLabel">¡Encuentra el error!</h5>
+				</div>
+				<div class="modal-body">
+					<p>Este juego consiste en encontrar el error ortográfico en los anuncios.
+						Para ello…
+						<br>
+						<span class="font-weight-bold">1.</span>	 Primero debes seleccionar el anuncio que más te guste.
+						<br>
+						<span class="font-weight-bold">2.</span>	Luego deberás dar clic en el error de ortografía que encuentres, como se muestra en la imagen.
+					</p>
+					<img src="../IMG/Instrucciones.jpeg" width="100%">
+					<p class="font-weight-bold">¡Que tengas mucho éxito!</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div><!--Fin Help-->
+
+	<img src="../IMG/fondo.png" alt="BG"usemap="#levelMap" z-index="-1">
+	<map name="levelMap">
+		<area shape="rect" coords="775,60,930,180" href="cartel1.html" alt="cartel1">
+		<area shape="rect" coords="20,80,95,190" href="cartel2.html" alt="cartel2">
+		<area shape="rect" coords="125,110,175,220" href="cartel3.html" alt="cartel3">
+		<area shape="rect" coords="40,240,95,355" href="cartel4.html" alt="cartel4">
+		<area shape="rect" coords="135,255,180,350" href="cartel5.html" alt="cartel5">
+	</map>
+
+</body>
+</html>

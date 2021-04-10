@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="h-100 w-100">
+<head>
+	<title>Seleccionar Nivel</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./CSS/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./CSS/SeleccionarNivel.css">
+
+  <style>
+
+
+</style>
+
+
+</head>
+<body class="h-100 w-100 justify-content-center align-self-center" style="background-color: #6c757d">
+
+  <!-- Inicio de navBar -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark mynav">
+    <!-- Brand/logo -->
+    <a class="navbar-brand textoBoton" href="#">¡Misterios en la nieve!</a>
+
+
+
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        
+      </li>
+      <li class="nav-item">
+        <button type="button" class="btn btn-sm btn-primary textoBoton" style="margin-right: 10px" data-toggle="modal" data-target="#myModal">Instrucciones</button>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-sm btn-primary textoBoton" href="../../index.html">Regresar al Menú</a>
+      </li>
+      
+    </ul>
+  </nav><!-- Fin de navBar -->
+
+  <div class="row justify-content-center align-self-center">
+   <div class="container" style="margin-top: 20px;">
+
+      <div class="card text-white bg-info mb-3 level-card" style="">
+        <div class="card-body">
+          <h5 class="card-title">Números</h5>
+          <p class="card-text"> ¡Los números que nos ayudan a contar se han extraviado! Ayuda a Pingu a encontrar los números antes de que se acabe el tiempo.</p>
+          <form action="sopaLetras.html?act=1" method="post" >
+           <input hidden="true" name="level" type="text" value="1">
+           <input type="submit" id="1" class="btn btn-primary textoBoton" value="Jugar"/>
+         </form>
+       </div>																		
+      </div>		
+
+      <div class="card text-white bg-success mb-3 level-card" style="">
+        <div class="card-body">
+          <h5 class="card-title">Colores</h5>
+          <p class="card-text">Alguien se robo los colores del arcoiris mientras Pingu trabajaba ¡Ayuda a Pingu a recuperarlos!.</p>
+          <form action="sopaLetras.html?act=2" method="post" >
+           <input hidden="true" name="level" type="text" value="2">
+           <input type="submit" id="1" class="btn btn-primary textoBoton" value="Jugar"/>
+         </form>
+        </div>
+      </div>
+
+      <div class="card text-white bg-warning mb-3 level-card" style="">
+        <div class="card-body">
+          <h5 class="card-title">Ropa</h5>
+          <p class="card-text">Mientras Pingu tendia la ropa, un fuerte viento se la llevo. Por favor ayuda a Pingu a encontrarla.</p>
+          <form action="sopaLetras.html?act=3" method="post" >
+          <input hidden="true" name="level" type="text" value="3">
+          <input type="submit" id="1" class="btn btn-primary textoBoton" value="Jugar"/>
+          </form>
+        </div>
+      </div>
+
+      <div class="card text-white bg-danger mb-3 level-card" style="">
+        <div class="card-body">
+          <h5 class="card-title">Frutas</h5>
+          <p class="card-text">Ayuda a Pingu con su investigación sobre las frutas, el necesita saber que frutas son más deliciosas, pero para ello debe encontrarlas.</p>
+          <form action="sopaLetras.html?act=4" method="post" >
+           <input hidden="true" name="level" type="text" value="4">
+           <input type="submit" id="1" class="btn btn-primary textoBoton" value="Jugar"/>
+         </form>
+       </div>
+      </div>
+
+      <div class="card text-white bg-info mb-3 level-card" style="">
+        <div class="card-body">
+          <h5 class="card-title">Materiales escolares</h5>
+          <p class="card-text">En la escuela se han reportado casos de extravios de materiales, ayuda a Pingu a encontrar todos los materiales para que los niños puedan regresar a clases.</p>
+          <form action="sopaLetras.html?act=5" method="post" >
+           <input hidden="true" name="level" type="text" value="4">
+           <input type="submit" id="1" class="btn btn-primary textoBoton" value="Jugar"/>
+         </form>
+       </div>
+      </div>
+
+      <div class="card text-white bg-success mb-3 level-card" style="">
+        <div class="card-body">
+          <h5 class="card-title">Equipo Cómputo</h5>
+          <p class="card-text">Esta actividad contiene un ejercicio sobre equipo de cómputo.</p>
+          <form action="sopaLetras.html?act=6" method="post" >
+           <input hidden="true" name="level" type="text" value="4">
+           <input type="submit" id="1" class="btn btn-primary textoBoton" value="Jugar"/>
+         </form>
+       </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title tituloInstrucciones">¡Sopa de Letras!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="textoInstrucciones" id="textoInstrucciones">
+
+          </div>
+          
+
+          
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <div style="padding-right: 200px">
+            <button type="button" id="anterior" class="btn btn-info textoBoton" >Anterior</button>
+            <button type="button" id="siguiente" class="btn btn-info textoBoton" >Siguiente</button>
+          </div>
+          <div>
+            <button type="button" class="btn btn-danger textoBoton" data-dismiss="modal">Cerrar</button>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+  </div>
+<script src="./JS/jquery_2.min.js"></script>
+  <script src="./JS/popper.min.js"></script>
+  <script src="./JS/bootstrap.min.js"></script>
+<script type="text/javascript" src="./JS/SeleccionarNivel.js"></script>
+
+</body>
+</html>

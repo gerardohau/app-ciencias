@@ -1,0 +1,36 @@
+body {
+	font-family: arcadeclassicregular;
+	background-color: #f6f5f0;
+}
+
+@font-face {
+	font-family: 'arcadeclassicregular';
+	src:
+	url('../FONTS/ARCADECLASSIC.TTF') format('truetype'), 
+	url('../FONTS/arcadeclassic-webfont.woff2') format('woff2'),
+	url('../FONTS/arcadeclassic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-touch-callout: none;
+}
+
+.respuesta {
+	position: absolute;
+	background-color: black;
+	opacity: 0;
+}
+
+#respuesta {
+	position: absolute;
+	background-color: black;
+	opacity: 0;
+}

@@ -1,0 +1,38 @@
+div.container-fluid {
+  background-image: url("../imagenes/fondo1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Helvetica, sans-serif !important;
+  font-size: 2em !important;
+  text-align:center;
+  height:100%;
+  width: 100%;
+  position:absolute;
+ }
+ 
+#ruletitle {
+ 	color: black;
+ 	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+	margin-top: 2%;
+} 
+
+#ruledes{
+ 	color: black;
+ 	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+ }
+
+#ruleinst1 {
+	color: white;
+	text-shadow: 2px 0 0 red, -2px 0 0 red, 0 2px 0 red, 0 -2px 0 red, 1px 1px red, -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red;
+}
+
+#ruleinst2 {
+	color: white;
+	text-shadow: 2px 0 0 blue, -2px 0 0 blue, 0 2px 0 blue, 0 -2px 0 blue, 1px 1px blue, -1px -1px 0 blue, 1px -1px 0 blue, -1px 1px 0 blue;
+}
+
+#ruleinst3 {
+	color: white;
+	text-shadow: 2px 0 0 red, -2px 0 0 red, 0 2px 0 red, 0 -2px 0 red, 1px 1px red, -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red;
+}
