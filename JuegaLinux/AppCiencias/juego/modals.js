@@ -1,6 +1,5 @@
 function createBasicModal(content){
-  var modal ='<div class="portfolio-modal modal fade" id="portfolioModal1" ' +
-              'tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true"> ' +
+  var modal =
               '<div class="modal-dialog modal-lg" role="document">' +
                 '<div class="modal-content">' +
                   '<button type="button" class="close" data-dismiss="modal" aria-label="Close">' +
@@ -11,10 +10,13 @@ function createBasicModal(content){
                   '</button>' +
                   content +
                 '</div>' +
-              '</div>' +
-            '</div>';
-    
+              '</div>';
     var elemento = document.createElement("div");
+    elemento.classList.add("portfolio-modal", "modal", "fade");
+    elemento.setAttribute("id","portfolioModal1");
+    elemento.setAttribute("tabindex","-1");
+    elemento.setAttribute("aria-labelledby","portfolioModal1Label");
+    elemento.setAttribute("haria-hidden","true");
     elemento.innerHTML = modal;
   return elemento;
 }

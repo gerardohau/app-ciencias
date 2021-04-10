@@ -74,6 +74,7 @@ function changeAnswer(event){
 }
 
 function checkAnswers(){
+    console.log("Revisar respuestas");
     var correct_answer_number = 0;
     for(var i=0; i < droppable_espacio_respuesta.length; i++){
       droppable_espacio_respuesta[i].classList.remove("bad");
@@ -89,14 +90,20 @@ function checkAnswers(){
       }
       
     }
-    
-    const contentResult = selectContentResult(droppable_espacio_respuesta.length,correct_answer_number);
+    var answer = droppable_espacio_respuesta.length;
+    console.log("Crear modal", answer);
+    debugger;
+    const contentResult = selectContentResult(answer,correct_answer_number);
     //Add modal information result
     var modal_obj = $("#portfolioModal1");
-    modal_obj.remove();
+    //debugger;
+    if(modal_obj){
+      modal_obj.remove();
+    }
     const modal = createBasicModal((bodyModalBasic("Resultados",contentResult)));
     document.body.appendChild(modal);
-    $modal_obj.modal('toggle');
+    modal_obj = $("#portfolioModal1");
+    modal_obj.modal('show');
 
     
 }
