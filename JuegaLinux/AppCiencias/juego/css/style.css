@@ -1,0 +1,34 @@
+.caja{
+    border: 2px solid green;
+}
+
+.game_box{
+  width: 10rem;
+  height: 3.2rem;
+  background-color: gainsboro;
+  border-radius: 0.5rem; 
+}
+
+.draggable {
+  cursor: move;
+  transition: opacity 0.2s;
+}
+
+.good{
+  border: 0.2em solid #28a745;
+}
+.good-icon{
+  font-size: 4rem;
+  color: #28a745;
+}
+.bad{
+  border: 0.2em solid #dc3545 ;
+}
+.bad-icon{
+  font-size: 4rem;
+  color: #dc3545;
+}
+
+.dropped{
+  pointer-events: all;
+}
