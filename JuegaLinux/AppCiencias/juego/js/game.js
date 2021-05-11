@@ -92,7 +92,6 @@ function checkAnswers(){
     }
     var answer = droppable_espacio_respuesta.length;
     console.log("Crear modal", answer);
-    debugger;
     const contentResult = selectContentResult(answer,correct_answer_number);
     //Add modal information result
     var modal_obj = $("#portfolioModal1");
@@ -114,8 +113,8 @@ function selectContentResult(total_answers, correct_answers){
   const half = (total_answers % 2 === 0) ? total_answers / 2: Math.round(total_answers/2) 
   
   if(total_answers === correct_answers){
-    const button_reintentar = create_btn_a("#", "Reintentar","light");
-    const buttton_siguiente_nivel = create_btn_a("figma.com", "Siguiente nivel", "primary");
+    const button_reintentar = create_btn_a(window.location.href, "Reintentar","light");
+    const buttton_siguiente_nivel = create_btn_a(getNextLevel(), "Siguiente nivel", "primary");
     const options_btn = button_reintentar + buttton_siguiente_nivel;
     return contentResult = templateContentSucess(
                             options_btn,
@@ -124,7 +123,7 @@ function selectContentResult(total_answers, correct_answers){
   }   
 
   if(correct_answers < half){
-    const button_reintentar = create_btn_a("#", "Reintentar","light");
+    const button_reintentar = create_btn_a(window.location.href, "Reintentar","light");
     const options_btn = button_reintentar;
     return contentResult = templateContentDanger(
                             options_btn,
@@ -133,7 +132,7 @@ function selectContentResult(total_answers, correct_answers){
   }
 
   if(correct_answers >= half){
-    const button_reintentar = create_btn_a("#", "Reintentar","light");
+    const button_reintentar = create_btn_a(window.location.href, "Reintentar","light");
     const options_btn = button_reintentar;
     return contentResult = templateContentDanger(
                             options_btn,
@@ -142,7 +141,7 @@ function selectContentResult(total_answers, correct_answers){
   }
 
   if(correct_answers === 0){
-    const button_reintentar = create_btn_a("#", "Reintentar","light");
+    const button_reintentar = create_btn_a(window.location.href, "Reintentar","light");
     const options_btn = button_reintentar;
     return contentResult = templateContentDanger(
                             options_btn,
@@ -151,6 +150,18 @@ function selectContentResult(total_answers, correct_answers){
   }
   
   
+}
+
+function getNextLevel(){
+  var nextLevel = "";
+  var nivel = window.location.href.match(/(\d+)/g);
+  if(nivel <4){
+    nivel++;
+    nextLevel = "../../../../../../../JuegaLinux/AppCiencias/juego/round"+nivel+"/index.html";
+  }else {
+    nextLevel = "../../../../../../../JuegaLinux/AppCiencias/juego/index.html";
+  }
+  return nextLevel;
 }
 
 
