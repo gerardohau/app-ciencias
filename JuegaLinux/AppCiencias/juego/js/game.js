@@ -157,9 +157,9 @@ function getNextLevel(){
   var nivel = window.location.href.match(/(\d+)/g);
   if(nivel <4){
     nivel++;
-    nextLevel = "../../../../../../../JuegaLinux/AppCiencias/juego/round"+nivel+"/index.html";
+    nextLevel = "../round"+nivel+"/index.html";
   }else {
-    nextLevel = "../../../../../../../JuegaLinux/AppCiencias/juego/index.html";
+    nextLevel = "../index.html";
   }
   return nextLevel;
 }
